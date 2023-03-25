@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import QrScanner from "./components/QrScanner/QrScanner.jsx";
 
-function App() {
+import { useState } from "react";
+
+import "./App.css";
+
+const App = () => {
+  const [qrValue, setQrData] = useState(undefined);
+  if (qrValue) {
+    console.log(qrValue);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <QrScanner GetQrData={setQrData} qrValue={qrValue} />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,24 @@
+.scanner{
+    width: 500px;
+  }
+
+
+  .refresh{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.refresh:hover{
+    cursor: pointer;
+}
+
+.heading{
+  text-align: center;
+}
+.Reload-page{
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
